@@ -4,11 +4,13 @@ import {
   Text, 
   View,
  } from 'react-native';
+import Index from './components/Index.js'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Je t'aime!</Text>
+      <Text>App</Text>
+        <Index/>
     </View>
   );
 }

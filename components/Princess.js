@@ -11,11 +11,17 @@ import {
 
 export default function App() {
   return (
-    <Image source={require('../../assets/bg.jpg')} style={styles.container}>
-    <View style={styles.container}>
-      <Text>JE T'AIME</Text>
+    <View>
+      <Text>Princess</Text>
+        <Image>
+          <Animated.Image source={require('../assets/bg.png')}
+            style={{
+              height: 100,
+            }}
+          ></Animated.Image>
+          </Image>
     </View>
-    </Image>
+    
   );
 }
 

@@ -9,4 +9,17 @@ import {
   Image,
  } from 'react-native';
 
- import Trump  from './components/Trump'
+ import Trump  from './Trump';
+ import Princess from './Princess';
+
+ export default function App() {
+  return (
+    <View>
+      <Image source={require('../assets/bg.png')} style={style.container}></Image>
+
+      <Text>Index</Text>
+        <Trump/>
+        <Princess/>
+    </View>
+  );
+}
