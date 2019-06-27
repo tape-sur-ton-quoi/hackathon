@@ -1,27 +1,30 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
     AppRegistry,
     Stylesheet,
     Text,
     Animated,
     Image,
+    View,
 } from 'react-native';
 
 export default class Trump extends Component {
 
-    render () {
+    render() {
         return (
-            <Animated.Image source ={this.props.trumpImg}
-                style ={{
-                    height: 100,
-                    width: 100,
-                    position: 'absolute',
-                    resizeMode: 'stretch',
-                    left: this.props.trumpStartposX,
-                    transform: [
-                        {translateY: this.props.moveTrumpval}
-                    ]
-                }}></Animated.Image>
+
+                <Animated.Image source={this.props.trumpImg}
+                    style={{
+                        height: 100,
+                        width: 100,
+                        position: 'absolute',
+                        resizeMode: 'stretch',
+                        left: this.props.trumpStartposX,
+                        transform: [
+                            { translateY: this.props.moveTrumpval }
+                        ]
+                    }}></Animated.Image>
+
         )
     }
 }
