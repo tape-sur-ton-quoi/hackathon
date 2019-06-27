@@ -19,6 +19,7 @@ export default class Princess extends Component {
           height: 100,
           width: 100,
           position: 'absolute',
+          marginTop: 550,
           resizeMode: 'stretch',
           transform: [
             { translateX: this.props.movePrincessVal }

@@ -41,8 +41,8 @@ export default class Index extends Component {
                     <Trump trumpImg={require('../assets/trump.png')}
                         trumpStartposX={this.state.trumpStartposX} moveTrumpval={this.state.moveTrumpval} />
 
-                    <Princess princessImg={require('../assets/princess.jpg')} movePrincessVal={this.state.movePrincessVal} />
                 </ImageBackground>
+                    <Princess princessImg={require('../assets/princess.jpg')} movePrincessVal={this.state.movePrincessVal} />
             </View>
         );
     }
