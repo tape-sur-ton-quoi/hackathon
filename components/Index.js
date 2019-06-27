@@ -19,6 +19,12 @@ export default class Index extends Component {
     state = {
         movePrincessVal: new Animated.Value(40),
         princessSide: 'left',
+
+        moveTrumpVal: new Animated.Value(0),
+        trumpStartposX: 0,
+        trumpSide: 'left',
+        trumpSpeed: 4200,
+
         gameOver: false,
 
     }
@@ -27,11 +33,11 @@ export default class Index extends Component {
 
     render() {
 
-        const random = Math.floor(Math.random() * Punchlines.length);
-        const bad = Punchlines[random].bad;
-        const good = Punchlines[random].good;
+        var random = Math.floor(Math.random() * Punchlines.length);
+        var bad = Punchlines[random].bad;
+        var good = Punchlines[random].good;
 
-        const gameOver = () => {
+        var gameOver = () => {
             alert(good)
         }
 
@@ -46,14 +52,14 @@ export default class Index extends Component {
                         position: 'relative',
                         resizeMode: 'cover',
                     }}>
-                    <Trump trumpImg={require('../assets/trump.png')}
-                        trumpStartposX={this.state.trumpStartposX} moveTrumpval={this.state.moveTrumpval} />
                     <Text>{bad}</Text>
                     <Princess princessImg={require('../assets/princess.jpg')} movePrincessVal={this.state.movePrincessVal} />
+                    <Trump trumpImg={require('../assets/trump.png')}
+                        trumpStartposX={this.state.trumpStartposX} moveTrumpVal={this.state.moveTrumpVal} />
                 </ImageBackground>
             </View>
 
         );
-
+     
     }
 }
