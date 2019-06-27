@@ -13,12 +13,10 @@ export default function App() {
   return (
     <View>
       <Text>Princess</Text>
-        <Image>
-          <Animated.Image source={require('../assets/bg.png')}
+        <Image source={require('../assets/bg.png')}
             style={{
-              height: 100,
-            }}
-          ></Animated.Image>
+              resizeMode: 'cover',
+            }}>
           </Image>
     </View>
     

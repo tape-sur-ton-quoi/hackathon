@@ -6,7 +6,8 @@ import {
   View,
   Dimensions,
   Animated,
-  Image,
+  ImageBackground,
+
  } from 'react-native';
 
  import Trump  from './Trump';
@@ -15,11 +16,16 @@ import {
  export default function App() {
   return (
     <View>
-      <Image source={require('../assets/bg.png')} style={style.container}></Image>
-
-      <Text>Index</Text>
-        <Trump/>
-        <Princess/>
+      <ImageBackground source={require('../assets/bg.png')}
+            style={{
+              height: 1100,
+              width: 1200,
+            }}>
+       
+          <Text>Index</Text>
+          <Trump/>
+          <Princess/>
+        </ImageBackground>
     </View>
   );
 }
