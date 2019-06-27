@@ -5,9 +5,12 @@ import {
   View,
  } from 'react-native';
 
+ import Index from './components/Index'
+
 export default function App() {
   return (
     <View style={styles.container}>
+      <Index/>
       <Text>Je t'aime!</Text>
     </View>
   );
