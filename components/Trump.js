@@ -12,7 +12,7 @@ export default class Trump extends Component {
 
     render() {
         return (
-
+            <View>
                 <Animated.Image source={this.props.trumpImg}
                     style={{
                         height: 100,
@@ -23,8 +23,9 @@ export default class Trump extends Component {
                         transform: [
                             { translateY: this.props.moveTrumpval }
                         ]
-                    }}></Animated.Image>
-
+                    }}>
+                </Animated.Image>
+            </View>
         )
     }
 }
