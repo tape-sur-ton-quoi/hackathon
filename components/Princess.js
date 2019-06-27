@@ -74,6 +74,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+<<<<<<< Updated upstream
   controls: {
     alignItems: 'center',
     flexDirection: 'row',
@@ -93,4 +94,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'right'
   },
+=======
+>>>>>>> Stashed changes
 });
