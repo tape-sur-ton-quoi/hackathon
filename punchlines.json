@@ -1,26 +1,43 @@
 [
     {
-        "good": "a",
+        "good": "Vous savez, je suis irrésistiblement attiré par les belles femmes. Je commence par les embrasser tout de suite, comme un aimant. Je les embrasse, je n'attends même pas. Quand t'es une star, elles te laissent faire. Tu peux tout faire. Les attraper par la chatte, tout faire",
+        "bad": "a"
+    },
+        
+    {
+        "good": "Si Ivanka n'était pas ma fille, je sortirais peut-être avec elle ! Je trouve qu'elle a un joli visage.",
         "bad": "a"
     },
     {
-        "good": "b",
+        "good": "J'ai des amis musulmans, ce sont des gens très bien, mais ils savent qu'il y a un problème, et on ne peut plus le tolérer",
         "bad": "b"
     },
     {
-        "good": "c",
+        "good": "Je construirai un grand, grand mur à la frontière sud et je le ferai financer par le Mexique.",
         "bad": "c"
     },
     {
-        "good": "d",
+        "good": "Comment Hillary Clinton peut-elle satisfaire son pays si elle ne satisfait pas son mari ? ",
         "bad": "d"
     },
     {
-        "good": "e",
+        "good": "Mes doigts sont beaux et longs, comme le sont, il est bien connu, différentes autres parties de mon corps ! ",
         "bad": "e"
     },
     {
-        "good": "f",
+        "good": "Une source extrêmement fiable a appelé mon bureau et m'a dit que l'acte de naissance de Barack Obama est un faux.",
         "bad": "f"
+    },
+    {
+        "good": "Comment traiter les femmes ? Vous devez les traiter comme de la merde",
+        "bad": "e"
+    },
+    {
+        "good": "Une partie de ma beauté c'est que je suis riche ! ",
+        "bad": "a"
+    },
+    {
+        "good": "Pourquoi ne pourrait-on pas utiliser l'arme nucléaire ? ",
+        "bad": "e"
     }
 ]
