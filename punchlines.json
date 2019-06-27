@@ -1,0 +1,35 @@
+[
+    {
+        "bad": [
+        {
+            "id": 1,
+            "excuse": "les femmes c'est moche !"
+        },
+        {
+            "id": 2,
+            "excuse": "les femmes c'est vraiment moche !"
+        },
+        {
+            "id": 3,
+            "excuse": "les femmes c'est trop moche !"
+        }
+        
+    ]
+    },
+    {
+        "good": [
+            {
+                "id": 1,
+                "excuse": "les femmes c'est beaux !"
+            },
+            {
+                "id": 2,
+                "excuse": "les femmes c'est vraiment beaux !"
+            },
+            {
+                "id": 3,
+                "excuse": "les femmes c'est les plus belles !"
+            }
+        ]
+    }
+]
