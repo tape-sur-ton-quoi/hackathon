@@ -12,7 +12,6 @@ import {
 export default class Vilain extends Component {
   render (){
   return (
-    <View>
       <Animated.Image source={this.props.vilainImg}
         style={{
           height: 100,
@@ -25,8 +24,6 @@ export default class Vilain extends Component {
           ]
         }}>
       </Animated.Image>
-    </View>
-
   );
   }
 }

@@ -17,10 +17,6 @@ import Vilain from './Vilain'
 export default class Index extends Component {
 
     state = {
-        moveTrumpval: new Animated.Value(0),
-        trumpStartposX: 0,
-        trumpSide: 'left',
-        trumpSpeed: 4200,
         movePrincessVal: new Animated.Value(40),
         princessSide: 'left',
 
@@ -53,10 +49,14 @@ export default class Index extends Component {
 
         let refreshIntervalId;
         refreshIntervalId = setInterval(() => {
-            // if (this.state.moveEnnemiVal._value > windowH - 200 && this.state.moveEnnemiVal._value < windhowH - 180 && this.state.ennemySide) {
-            //     clearInterval(refreshIntervalId)
-            //     // this.setState({ })
-            // }
+             if (this.state.moveEnnemiVal._value > windhowH - 280 &&
+                 this.state.moveEnnemiVal._value < windhowH - 180 &&
+                  this.state.playerSide == this.state.ennemySide) {
+
+                clearInterval(refreshIntervalId)
+                  this.setState({ gameOver: true })
+                  this.gameOver();
+             }
 
         }, 50)
 
@@ -80,6 +80,7 @@ export default class Index extends Component {
         
         return (
             <View>
+                
                 <ImageBackground source={require('../assets/bg.jpg')}
                     style={{
                         height:670,
@@ -88,14 +89,14 @@ export default class Index extends Component {
                         position: 'relative',
                         resizeMode: 'cover',
                     }}>
-                    <Trump trumpImg={require('../assets/trump.png')}
-                    />
-                </ImageBackground>
-
+                    {/* <Trump trumpImg={require('../assets/trump.png')} */}
+                    
                 <Vilain vilainImg={require('../assets/trump.png')}
                     ennemyStartposX={this.state.ennemyStartposX}
-                    moveEnnemiVal={this.props.moveEnnemiVal}>
-                </Vilain>
+                    moveEnnemiVal={this.state.moveEnnemiVal}/>
+                </ImageBackground>
+
+                
 
                 <Princess princessImg={require('../assets/princess.jpg')} movePrincessVal={this.state.movePrincessVal} />
             </View>
