@@ -13,6 +13,7 @@ import {
 import Trump from './Trump';
 import Princess from './Princess';
 
+import Punchlines from '../punchlines.json'
 export default class Index extends Component {
 
     state = {
@@ -24,10 +25,22 @@ export default class Index extends Component {
         princessSide: 'left',
 
         gameOver: false,
+
     }
 
+
     render() {
-        return (
+
+        
+        const random = Math.floor(Math.random() * Punchlines.length);
+        const bad = Punchlines[random].bad;
+        const good = Punchlines[random].good;
+
+        const gameOver = () => {
+                alert(good)
+        }
+      
+         return (
             <View>
                 <ImageBackground source={require('../assets/bg.jpg')}
                     style={{
@@ -36,16 +49,20 @@ export default class Index extends Component {
                         flex: 1,
                         position: 'relative',
                         resizeMode: 'cover',
-
                     }}>
                     <Trump trumpImg={require('../assets/trump.png')}
                         trumpStartposX={this.state.trumpStartposX} moveTrumpval={this.state.moveTrumpval} />
-
-                </ImageBackground>
+                        <Text>{bad}</Text>
                     <Princess princessImg={require('../assets/princess.jpg')} movePrincessVal={this.state.movePrincessVal} />
+                </ImageBackground>
             </View>
+           
         );
     }
+   
+        
+
+    
 }
 
 

@@ -11,6 +11,7 @@ import {
 export default class Trump extends Component {
 
     render() {
+        
         return (
             <View>
                 <Animated.Image source={this.props.trumpImg}
@@ -25,6 +26,7 @@ export default class Trump extends Component {
                         ]
                     }}>
                 </Animated.Image>
+                
             </View>
         )
     }

@@ -20,33 +20,33 @@ export default class Princess extends Component {
   render() {
     return (
       <View>
-        
-      <Animated.Image source={this.props.princessImg}
-      style={{
-        height: 100,
-        width: 100,
-        position: 'absolute',
-        marginTop: 550,
-        resizeMode: 'stretch',
-        transform: [
-          { translateX: this.state.movePrincessVal }
-        ]
-      }}>
-      </Animated.Image>
 
-      <View style={styles.controls}>
-        <Text style={styles.left} onPress={ () => this.movePrincess('left')}> {'<'} </Text>
-        <Text style={styles.right} onPress={ () => this.movePrincess('right')}> {'>'} </Text>
-      </View>
+        <Animated.Image source={this.props.princessImg}
+          style={{
+            height: 100,
+            width: 100,
+            position: 'absolute',
+            marginTop: 550,
+            resizeMode: 'stretch',
+            transform: [
+              { translateX: this.state.movePrincessVal }
+            ]
+          }}>
+        </Animated.Image>
+
+        <View style={styles.controls}>
+          <Text style={styles.left} onPress={() => this.movePrincess('left')}> {'<'} </Text>
+          <Text style={styles.right} onPress={() => this.movePrincess('right')}> {'>'} </Text>
+        </View>
 
       </View>
-  )
+    )
   }
 
-  movePrincess(direction){
+  movePrincess(direction) {
     //move princess right
-    if(direction == 'right') {
-      this.setState({ princessSide: 'right'});
+    if (direction == 'right') {
+      this.setState({ princessSide: 'right' });
       Animated.spring(
         this.state.movePrincessVal,
         {
@@ -55,7 +55,7 @@ export default class Princess extends Component {
         }
       ).start();
     } else if (direction == 'left') {
-      this.setState({ princessSide: 'left'});
+      this.setState({ princessSide: 'left' });
       Animated.spring(
         this.state.movePrincessVal,
         {
