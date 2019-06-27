@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
     AppRegistry,
     Stylesheet,
@@ -8,30 +8,24 @@ import {
     View,
 } from 'react-native';
 
-export default function App() {
- return (
-            <View>
-                <Animated.Image 
-                source={require('../assets/trump.png')}
-                style ={{
-                   height: 100,
-                    width: 100,
-                }}>
+export default class Trump extends Component {
 
+    render() {
+        return (
+            <View>
+                <Animated.Image source={this.props.trumpImg}
+                    style={{
+                        height: 100,
+                        width: 100,
+                        position: 'absolute',
+                        resizeMode: 'stretch',
+                        left: this.props.trumpStartposX,
+                        transform: [
+                            { translateY: this.props.moveTrumpval }
+                        ]
+                    }}>
                 </Animated.Image>
-                <Text>Trump</Text>
-            </View> 
-            //      style ={{
-            //         height: 1000,
-            //         width: 1000,
-            //     //   position: 'absolute',
-            //     //    resizeMode: 'stretch',
-            //     //  left: this.props.trumpStartposX,
-            //     //      transform: [
-            //     //         {translateY: this.props.moveTrumpval}
-            //     //    ]
-            //      }}
-            
-            //</Animated>
+            </View>
         )
+    }
 }

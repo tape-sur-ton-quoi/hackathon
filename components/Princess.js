@@ -1,26 +1,34 @@
-import React from 'react';
-import { 
+import React, { Component } from 'react';
+import {
   AppRegistry,
-  StyleSheet, 
-  Text, 
+  StyleSheet,
+  Text,
   View,
   Dimensions,
   Animated,
   Image,
 } from 'react-native';
 
-export default function App() {
+export default class Princess extends Component {
+  render (){
   return (
     <View>
-      <Text>Princess</Text>
-        <Image source={require('../assets/bg.png')}
-            style={{
-              resizeMode: 'cover',
-            }}>
-          </Image>
+
+      <Animated.Image source={this.props.princessImg}
+        style={{
+          height: 100,
+          width: 100,
+          position: 'absolute',
+          resizeMode: 'stretch',
+          transform: [
+            { translateX: this.props.movePrincessVal }
+          ]
+        }}>
+      </Animated.Image>
     </View>
-    
+
   );
+  }
 }
 
 const styles = StyleSheet.create({
