@@ -22,16 +22,18 @@ export default class Princess extends Component {
       <View>
         
       <Animated.Image source={this.props.princessImg}
-      style={{
-        height: 100,
-        width: 100,
-        position: 'absolute',
-        marginTop: 550,
-        resizeMode: 'stretch',
-        transform: [
-          { translateX: this.state.movePrincessVal }
-        ]
-      }}>
+ vilainAnimation
+        style={{
+          height: 100,
+          width: 100,
+          position: 'absolute',
+          marginTop: 550,
+          resizeMode: 'stretch' ,
+          transform: [
+            { translateX: this.props.movePrincessVal }
+          ]
+        }}>
+
       </Animated.Image>
 
       <View style={styles.controls}>
