@@ -30,9 +30,9 @@ export default class Trump extends Component {
                         width: 100,
                         position: 'absolute',
                         resizeMode: 'stretch',
-                        left: this.props.trumpStartposX,
+                        left: this.state.trumpStartposX,
                         transform: [
-                            { translateY: this.props.moveTrumpVal }
+                            { translateY: this.state.moveTrumpVal }
                         ]
                     }}>
                 </Animated.Image>
@@ -46,9 +46,9 @@ export default class Trump extends Component {
     }
     animateTrump =()=> {
         this.state.moveTrumpVal.setValue(-100);
-        const windowH = Dimensions.get('window').height;
+        var windowH = Dimensions.get('window').height;
 
-        const r = Math.floor(Math.random()*2)+1;
+        var r = Math.floor(Math.random()*2)+1;
 
         if (r == 2) {
             r = 40;
@@ -59,7 +59,7 @@ export default class Trump extends Component {
         }
         this.setState({trumpStartposX: r });
 
-        let refreshIntervalId;
+        var refreshIntervalId;
         refreshIntervalId = setInterval(() => {
           if(this.state.moveTrumpVal._value > windowH - 280
             && this.state.moveTrumpVal._value < windowH - 180

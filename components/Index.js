@@ -33,11 +33,11 @@ export default class Index extends Component {
 
     render() {
 
-        const random = Math.floor(Math.random() * Punchlines.length);
-        const bad = Punchlines[random].bad;
-        const good = Punchlines[random].good;
+        var random = Math.floor(Math.random() * Punchlines.length);
+        var bad = Punchlines[random].bad;
+        var good = Punchlines[random].good;
 
-        const gameOver = () => {
+        var gameOver = () => {
             alert(good)
         }
 
