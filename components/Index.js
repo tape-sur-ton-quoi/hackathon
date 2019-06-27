@@ -6,25 +6,48 @@ import {
     View,
     Dimensions,
     Animated,
-    Image,
+    ImageBackground,
+
 } from 'react-native';
 
-import Trump from './Trump.js'
+import Trump from './Trump';
+import Princess from './Princess';
 
 export default class Index extends Component {
+
     state = {
         moveTrumpval: new Animated.Value(0),
         trumpStartposX: 0,
         trumpSide: 'left',
         trumpSpeed: 4200,
+        movePrincessVal: new Animated.Value(40),
+        princessSide: 'left',
 
         gameOver: false,
     }
 
     render() {
         return (
-                <Trump trumpImg={require('../assets/trump.png')}
-                    trumpStartposX={this.state.trumpStartposX} moveTrumpval={this.state.moveTrumpval} />
-        )
+            <View>
+                <ImageBackground source={require('../assets/bg.jpg')}
+                    style={{
+                        height:670,
+                        width:400,
+                        flex: 1,
+                        position: 'relative',
+                        resizeMode: 'cover',
+
+                    }}>
+                    <Trump trumpImg={require('../assets/trump.png')}
+                        trumpStartposX={this.state.trumpStartposX} moveTrumpval={this.state.moveTrumpval} />
+
+                    <Princess princessImg={require('../assets/princess.jpg')} movePrincessVal={this.state.movePrincessVal} />
+                </ImageBackground>
+            </View>
+        );
     }
 }
+
+
+
+
