@@ -90,7 +90,7 @@ export default class Index extends Component {
             && this.state.princessSide == this.state.trumpSide) {
 
                 clearInterval(refreshIntervalId)
-                this.setState({ punchlines : true });
+                this.setState({ punchlines : true, points: ++this.state.points });
                 this.punchlines();
             }
         },50);
@@ -105,9 +105,8 @@ export default class Index extends Component {
                duration: this.state.trumpSpeed,
            } 
         ).start(event => {
-            if(event.finished && this.state.punchlines == false) {
+            if(event.finished) {
               clearInterval(refreshIntervalId)
-             //this.setState({ points: ++this.state.points})
               this.animateTrump()
             }
         })
