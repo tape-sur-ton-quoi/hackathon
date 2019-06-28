@@ -1,43 +1,39 @@
 [
     {
-        "good": "Vous savez, je suis irrésistiblement attiré par les belles femmes. Je commence par les embrasser tout de suite, comme un aimant. Je les embrasse, je n'attends même pas. Quand t'es une star, elles te laissent faire. Tu peux tout faire. Les attraper par la chatte, tout faire",
-        "bad": "a"
+        "bad": "Les femmes, il faut les attraper par la chatte!",
+        "good": ""
     },
         
     {
-        "good": "Si Ivanka n'était pas ma fille, je sortirais peut-être avec elle ! Je trouve qu'elle a un joli visage.",
-        "bad": "a"
+        "bad": "Si Ivanka n'était pas ma fille, je sortirais peut-être avec elle !",
+        "good": "a"
     },
     {
-        "good": "J'ai des amis musulmans, ce sont des gens très bien, mais ils savent qu'il y a un problème, et on ne peut plus le tolérer",
-        "bad": "b"
+        "bad": "Je construirai un grand, grand mur à la frontière sud et je le ferai financer par le Mexique.",
+        "good": "c"
     },
     {
-        "good": "Je construirai un grand, grand mur à la frontière sud et je le ferai financer par le Mexique.",
-        "bad": "c"
+        "bad": "Comment Hillary Clinton peut-elle satisfaire son pays si elle ne satisfait pas son mari ? ",
+        "good": "d"
     },
     {
-        "good": "Comment Hillary Clinton peut-elle satisfaire son pays si elle ne satisfait pas son mari ? ",
-        "bad": "d"
+        "bad": "Mes doigts sont beaux et longs, comme le sont, il est bien connu, différentes autres parties de mon corps ! ",
+        "good": "e"
     },
     {
-        "good": "Mes doigts sont beaux et longs, comme le sont, il est bien connu, différentes autres parties de mon corps ! ",
-        "bad": "e"
+        "bad": "Une source extrêmement fiable a appelé mon bureau et m'a dit que l'acte de naissance de Barack Obama est un faux.",
+        "good": "f"
     },
     {
-        "good": "Une source extrêmement fiable a appelé mon bureau et m'a dit que l'acte de naissance de Barack Obama est un faux.",
-        "bad": "f"
+        "bad": "Comment traiter les femmes ? Vous devez les traiter comme de la merde",
+        "good": "e"
     },
     {
-        "good": "Comment traiter les femmes ? Vous devez les traiter comme de la merde",
-        "bad": "e"
+        "bad": "Une partie de ma beauté c'est que je suis riche ! ",
+        "good": "a"
     },
     {
-        "good": "Une partie de ma beauté c'est que je suis riche ! ",
-        "bad": "a"
-    },
-    {
-        "good": "Pourquoi ne pourrait-on pas utiliser l'arme nucléaire ? ",
-        "bad": "e"
+        "bad": "Pourquoi ne pourrait-on pas utiliser l'arme nucléaire ? ",
+        "good": "e"
     }
 ]
