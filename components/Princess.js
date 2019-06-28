@@ -10,22 +10,16 @@ import {
 } from 'react-native';
 
 export default class Princess extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-   
-    }
-  }
+
   render() {
     return (
       <View>
-
         <Animated.Image source={this.props.princessImg}
           style={{
-            height: 100,
+            height: 130,
             width: 100,
             position: 'absolute',
-            marginTop: 550,
+            top: 550,
             resizeMode: 'stretch',
             transform: [
               { translateX: this.props.movePrincessVal }
@@ -43,7 +37,11 @@ export default class Princess extends Component {
       </View>
     )
   }
-
 }
+
+
+
+      
+
 
 
