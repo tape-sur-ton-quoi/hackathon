@@ -1,39 +1,44 @@
 [
     {
         "bad": "Les femmes, il faut les attraper par la chatte!",
-        "good": ""
+        "good": "Allô Trumpinou, y'a ta mère au bout du fil, elle voudrait te parler de ce que tu penses ! "
     },
-        
     {
         "bad": "Si Ivanka n'était pas ma fille, je sortirais peut-être avec elle !",
         "good": "Par contre, c'est sûr qu'elle ne sortirait pas avec toi."
     },
     {
         "bad": "Je construirai un grand, grand mur à la frontière sud et je le ferai financer par le Mexique.",
-        "good": "C'est le projet le plus important depuis qu'on a construit les pyramides."
+        "good": "C'est le projet le plus intéressant depuis les pyramides d'Egypte."
     },
     {
         "bad": "Comment Hillary Clinton peut-elle satisfaire son pays si elle ne satisfait pas son mari ? ",
-        "good": "d"
+        "good": "En te poussant dans les escaliers, elle satisfera les deux"
     },
     {
-        "bad": "Mes doigts sont beaux et longs, comme le sont, il est bien connu, différentes autres parties de mon corps ! ",
-        "good": "e"
+        "bad": "Mes doigts sont beaux et longs, comme le sont, il est bien connu, différentes autres parties de mon corps !",
+        "good": "Tu parles des tes poils de cul?"
     },
     {
         "bad": "Une source extrêmement fiable a appelé mon bureau et m'a dit que l'acte de naissance de Barack Obama est un faux.",
-        "good": "f"
+        "good": "Elle a aussi dit que tes notes de coiffeur etaient des faux"
     },
     {
         "bad": "Comment traiter les femmes ? Vous devez les traiter comme de la merde",
-        "good": "e"
+        "good": "Sentiments partagés"
     },
     {
         "bad": "Une partie de ma beauté c'est que je suis riche ! ",
-        "good": "a"
+        "good": "Dommage que l'autre partie de ta beauté soit ta pauvresse d'esprit"
     },
     {
         "bad": "Pourquoi ne pourrait-on pas utiliser l'arme nucléaire ? ",
-        "good": "I have a dream...."
+        "good": "N'oublie pas que t'es allergique aux champignons !"
+    },
+    {
+        "bad": "J'ai des amis musulmans, ce sont des gens très bien, mais ils savent qu'il y a un problème, et on ne peut plus le tolérer",
+        "good": "C'est toi le problème!"
     }
+
+
 ]
