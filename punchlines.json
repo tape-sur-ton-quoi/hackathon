@@ -6,11 +6,11 @@
         
     {
         "bad": "Si Ivanka n'était pas ma fille, je sortirais peut-être avec elle !",
-        "good": "a"
+        "good": "Par contre, c'est sûr qu'elle ne sortirait pas avec toi."
     },
     {
         "bad": "Je construirai un grand, grand mur à la frontière sud et je le ferai financer par le Mexique.",
-        "good": "c"
+        "good": "C'est le projet le plus important depuis qu'on a construit les pyramides."
     },
     {
         "bad": "Comment Hillary Clinton peut-elle satisfaire son pays si elle ne satisfait pas son mari ? ",
@@ -34,6 +34,6 @@
     },
     {
         "bad": "Pourquoi ne pourrait-on pas utiliser l'arme nucléaire ? ",
-        "good": "e"
+        "good": "I have a dream...."
     }
 ]
