@@ -32,7 +32,12 @@ export default class Princess extends Component {
             ]
           }}>
         </Animated.Image>
-
+        <Text style={{
+          position: 'absolute',
+          top: 600,
+         }}
+        
+        >{this.props.good}</Text>   
       
 
       </View>

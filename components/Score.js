@@ -41,13 +41,10 @@ const styles = StyleSheet.create({
   },
   view: {
     alignItems: "center",
-    flex: 1,
     marginTop: 80,
-    zIndex:-1,
   },
   text: {
     fontweight: "bold",
     fontSize: 40,
-
   }
 });

@@ -107,7 +107,7 @@ export default class Index extends Component {
         ).start(event => {
             if(event.finished && this.state.punchlines == false) {
               clearInterval(refreshIntervalId)
-              // this.setState({ points: ++this.state.points})
+             //this.setState({ points: ++this.state.points})
               this.animateTrump()
             }
         })
