@@ -22,10 +22,10 @@ export default class Princess extends Component {
 
         <Animated.Image source={this.props.princessImg}
           style={{
-            height: 100,
+            height: 130,
             width: 100,
             position: 'absolute',
-            marginTop: 550,
+            top: 650,
             resizeMode: 'stretch',
             transform: [
               { translateX: this.props.movePrincessVal }
