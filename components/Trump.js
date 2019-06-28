@@ -4,13 +4,25 @@ import {
     Stylesheet,
     Text,
     Animated,
+    Dimensions,
     Image,
     View,
 } from 'react-native';
 
+
 export default class Trump extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            moveTrumpVal: new Animated.Value(0),
+        trumpStartposX: 0,
+        trumpSide: 'left',
+        trumpSpeed: 4200,
+        }
+    }
 
     render() {
+        console.log(this.props.bad)
         return (
             <View>
                 <Animated.Image source={this.props.trumpImg}
@@ -21,11 +33,15 @@ export default class Trump extends Component {
                         resizeMode: 'stretch',
                         left: this.props.trumpStartposX,
                         transform: [
-                            { translateY: this.props.moveTrumpval }
+                            { translateY: this.props.moveTrumpVal }
                         ]
                     }}>
+                
                 </Animated.Image>
+                <Text>{this.props.bad}</Text>   
             </View>
+            
         )
     }
+  
 }

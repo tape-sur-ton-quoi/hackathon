@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {
   AppRegistry,
-  Stylesheet,
+  StyleSheet,
   Text,
   Animated,
   Image,
@@ -9,36 +9,45 @@ import {
 } from "react-native";
 
 export default class Score extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      points: 0,
-    };
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     points: 0,
+  //   };
+  //}
   render() {
     return (
-      <View>
-        <Text 
-          style={{
-            fontweight: "bold",
-            fontSize: 40,
-            flex: 1,
-            alignItems: "center",
-            marginTop: 80,
-          }}>{styles.points}</Text>
-        
+      <View style={styles.view}>
+        <View style={styles.points}>
+          <Text style={styles.text}>
+           {this.props.points}
+          </Text>
+          
+        </View>
       </View>
     );
   }
 }
 
+
 const styles = StyleSheet.create({
   points: {
-    width: 80,
-    height: 80,
+    alignItems: "center",
     backgroundColor: "#fff",
     borderRadius: 100,
+    height: 80,
+    justifyContent: "center",
+    width: 80,
+  },
+  view: {
     alignItems: "center",
-    justifyContent: "center"
+    flex: 1,
+    marginTop: 80,
+    zIndex:-1,
+  },
+  text: {
+    fontweight: "bold",
+    fontSize: 40,
+
   }
 });
