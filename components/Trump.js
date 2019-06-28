@@ -27,8 +27,8 @@ export default class Trump extends Component {
             <View>
                 <Animated.Image source={this.props.trumpImg}
                     style={{
-                        height: 100,
-                        width: 100,
+                        height: 130,
+                        width: 150,
                         position: 'absolute',
                         resizeMode: 'stretch',
                         left: this.props.trumpStartposX,

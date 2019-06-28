@@ -23,7 +23,7 @@ export default class Index extends Component {
         moveTrumpVal: new Animated.Value(0),
         trumpStartposX: 0,
         trumpSide: 'left',
-        trumpSpeed: 4200,
+        trumpSpeed: 1200,
 
         punchlines: false,
 
@@ -42,21 +42,21 @@ export default class Index extends Component {
 
                 <ImageBackground source={require('../assets/bg.jpg')}
                     style={{
-                        height: 670,
+                        height: 870,
                         width: 400,
                         flex: 1,
                         position: 'relative',
                         resizeMode: 'cover',
                     }}>
                     
-                    <Princess princessImg={require('../assets/princess.jpg')} movePrincessVal={this.state.movePrincessVal} />
+                    <Princess princessImg={require('../assets/newPrincess.png')} movePrincessVal={this.state.movePrincessVal} />
                     <Trump trumpImg={require('../assets/trump.png')}
                         trumpStartposX={this.state.trumpStartposX} moveTrumpVal={this.state.moveTrumpVal} bad={this.state.bad} />
+                </ImageBackground>
                     <View style={styles.controls}>
                         <Text style={styles.left} onPress={() => this.movePrincess('left')}> {'<'} </Text>
                         <Text style={styles.right} onPress={() => this.movePrincess('right')}> {'>'} </Text>
                     </View>
-                </ImageBackground>
             </View>
 
         );
@@ -136,7 +136,7 @@ export default class Index extends Component {
             this.state.movePrincessVal,
             {
               toValue: 40,
-              tension: 120,
+              tension: 520,
             }
           ).start();
         }
@@ -152,6 +152,8 @@ export default class Index extends Component {
             controls: {
               alignItems: 'center',
               flexDirection: 'row',
+              position: 'absolute',
+              top: 300,
             },
             right: {
               flex: 1,
