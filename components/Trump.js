@@ -42,8 +42,8 @@ export default class Trump extends Component {
                 style={{
                     margin:50,
                     width: 250,
+                    fontSize: 20,
                     position: 'absolute',
-                    top: 25,
                 }}>Trump: {this.props.bad}</Text> 
                 </View>
         )

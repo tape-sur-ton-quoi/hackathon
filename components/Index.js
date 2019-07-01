@@ -45,16 +45,16 @@ export default class Index extends Component {
                         position: 'relative',
                         resizeMode: 'cover',
                     }}>
-                    <View style={styles.controls}>
-                        <Text style={styles.left} onPress={() => this.movePrincess('left')}> {'<'} </Text>
-                        <Text style={styles.right} onPress={() => this.movePrincess('right')}> {'>'} </Text>
-                    </View>
+
                     <Score points={this.state.points} />
 
                     <Princess princessImg={require('../assets/newPrincess.png')} movePrincessVal={this.state.movePrincessVal} />
                     <Trump trumpImg={require('../assets/trump.png')}
                         trumpStartposX={this.state.trumpStartposX} moveTrumpVal={this.state.moveTrumpVal} bad={this.state.bad} />
-
+                    <View style={styles.controls}>
+                        <Text style={styles.left} onPress={() => this.movePrincess('left')}> {'<'} </Text>
+                        <Text style={styles.right} onPress={() => this.movePrincess('right')}> {'>'} </Text>
+                    </View>
                 </ImageBackground>
 
             </View>
@@ -83,6 +83,10 @@ export default class Index extends Component {
         } else {
             r = Dimensions.get('window').width - 140;
             this.setState({ trumpSide: 'right' });
+            var random = Math.floor(Math.random() * Punchlines.length);
+            var bad = Punchlines[random].bad;
+            var good = Punchlines[random].good;
+            this.setState({ good: good, bad: bad })
         }
         this.setState({ trumpStartposX: r });
 
@@ -150,9 +154,10 @@ const styles = StyleSheet.create({
     },
     controls: {
         alignItems: 'center',
+        marginLeft: 130,
         flexDirection: 'row',
         position: 'absolute',
-        top: 300,
+        top: 400,
     },
     right: {
         flex: 1,
